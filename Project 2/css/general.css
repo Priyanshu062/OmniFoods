@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    box-shadow:  0 0 0 0.5rem rgba(235, 130, 35, 0.5);
+    border-radius: 3px;
+    padding: 2px;
+}
+html {
+    font-size:65%;
+    overflow-x:hidden;
+}
+body {
+    font-family:"Rubik", sans-serif; 
+    color: #555;
+    
+}
+.btn,
+.btn:link,
+.btn:visited {
+    padding:1rem 1.4rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+
+    border :0;
+    transition: all 0.3s ease;
+}
+.btn-full:visited,
+.btn-full:link {
+    background-color: #e67e22;
+    color: #fff;
+}
+.btn-full:hover,
+.btn-full:active{
+    background-color: #cf711f;
+    cursor: pointer;
+}
+.btn-white:link,
+.btn-white:visited {
+    color:#555;
+    margin-left: 1rem;
+    background-color: #fff;
+}
+.btn-white:hover,
+.btn-white:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 3px 3px white;
+}
+
+.btn-form:link,
+.btn-form:visited{
+    background-color: #45260a;
+    color:#fff;
+}
+
+.btn-form:active,
+.btn-form:hover{
+    background-color: #fff;
+    color: #555;
+    transition: 0.5s ease;
+}
+
+.hd-primary,
+.hd-secondary,
+.hd-tertiary {
+    color:#333;
+    text-rendering: optimizeLegibility;
+}
+.hd-primary {
+    font-size: 4.35rem;
+    margin-bottom: 4.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.hd-secondary {
+    font-size:4rem ;
+    margin-bottom:8rem;
+    font-weight: 800;
+}
+.hd-tertiary {
+    font-size: 1.5rem;
+    margin-bottom:1rem ;
+}
+.subhd {
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#cf711f;
+    display: block;
+    letter-spacing: 0.8;
+    font-size: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+.grid{
+    display: flex; /* --> not correct but had to do */
+    column-gap: 10rem;
+    flex-direction:row;
+    margin-bottom: 4rem;
+}
+.grid-2-cols{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-3-cols{
+    width: 30%;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-4-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.grid-center {
+    align-items: center;
+}
